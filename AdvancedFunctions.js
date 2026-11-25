@@ -50,3 +50,23 @@ function countVowels(sentence) {
   return `There are ${counter} vowels in ${sentence}`
 }
 console.log(countVowels("Nicholas"))
+
+// TODO: Create a “isPrime” function that takes a number as a parameter andreturnstrue if the number is prime, and false otherwise. Make sure to test your codewith4numbers
+function isPrime(num) {
+  if (num === 2 ||
+    num % 2 != 0 &&
+    num % 3 != 0 &&
+    num % 5 != 0 &&
+    num % 7 != 0
+  ){
+    return true
+  } else {
+    return false
+  }
+}
+console.log("Is this a prime number?", isPrime(2))
+console.log("Is this a prime number?", isPrime(6))
+console.log("Is this a prime number?", isPrime(11))
+console.log("Is this a prime number?", isPrime(9))
+
+
